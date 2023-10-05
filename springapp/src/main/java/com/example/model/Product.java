@@ -20,5 +20,7 @@ public class Product{
     float getPrice(){
         return price;
     }
-    int 
+    int getQuantity(){
+        return quantity;
+    }
 }
