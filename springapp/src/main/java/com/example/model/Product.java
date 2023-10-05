@@ -1,14 +1,15 @@
 package com.example.model;
 
+@ResponseEntity
 public class Product{
-    int id;
+    Long id;
     String name;
     float price;
     int quantity;
-    void setId(int id){
+    void setId(Long id){
         this.id=id;
     }
-    int getId(){
+    Long getId(){
         return id;
     }
     void setName(String name){

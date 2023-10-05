@@ -1,6 +1,5 @@
 package com.example.controller;
 
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import java.util.*;
-import com.exa
+import com.example.model.Product;
 
 @RestController
 @RequestMapping("/products")
@@ -17,7 +16,7 @@ public class ProductController {
     private final Map<Long, Product> productMap = new HashMap<>();
     private long currentId = 1;
 
-    // Retrieve product details by ID
+
     @GetMapping("/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable Long id) {
         Product product = productMap.get(id);
