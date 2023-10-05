@@ -5,4 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class P
+public class ProductController{
+
+    @GetMapping("/products/{id}")
+    @ResponseStatus(code = HttpStatus.OK, reason = "OK")
+    public 
+}
